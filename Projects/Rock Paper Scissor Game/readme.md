@@ -25,16 +25,9 @@ Yayy!!
 
 ## ▶️ How to Compile & Run
 
-### Linux / macOS
+### Linux / macOS / Windows
 
 ```bash
 gcc rock_paper_scissors.c
-./rps
-```
-
-### Windows
-
-```bash
-gcc grade-check.c
-./grade-check
+./a.exe
 ```

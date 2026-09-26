@@ -20,6 +20,8 @@ Your Grade : A
 ```
   
 ## ▶️ How to Compile & Run
+
 ```bash
 gcc grade-check.c
-./grade-check
+./a.exe
+```
