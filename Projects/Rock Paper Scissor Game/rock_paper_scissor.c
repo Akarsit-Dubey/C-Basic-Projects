@@ -21,5 +21,5 @@ int main(void){
         printf("Player 2 Wins!!\n");
         printf("Yayy!!");
     }
-    
+    return 0;   
 }
