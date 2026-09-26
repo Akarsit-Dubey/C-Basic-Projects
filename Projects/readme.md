@@ -12,6 +12,12 @@ If passed, it assigns a grade (A+ to D) based on the marks obtained. If failed, 
 - **33–39** → Grade D  
 - **Below 33** → Fail (Grade F)
 
+## Example 
+```
+Enter Your Obtained Marks : 82
+You Have Passed The Examination.
+Your Grade : A
+```
   
 ## ▶️ How to Compile & Run
 ```bash
