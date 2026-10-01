@@ -2,16 +2,17 @@
 
 int main(void)
 {
-    int choice, quantity, total;
+    int choice, quantity;
+    int total=0;
     float coffee = 40, tea = 15, biscuit = 20, water = 10;
 
     do
     {
         printf("--- Akarsit's Cafe --- \n");
-        printf("1. Coffee \n");
-        printf("2. Tea \n");
-        printf("3. Biscuit\n");
-        printf("4. Water\n");
+        printf("1. Coffee %.0f Rs\n", coffee);
+        printf("2. Tea %.0f Rs\n", tea);
+        printf("3. Biscuit %.0f Rs\n", biscuit);
+        printf("4. Water %.0f Rs\n", water);
         printf("5. Bill / Checkout\n");
         printf("6. Exit\n");
 
@@ -26,10 +27,10 @@ int main(void)
 
             if (quantity > 1)
             {
-                total = coffee * quantity;
+                total += coffee * quantity;
                 printf("Added %d Coffe Into Your Cart !\n", quantity);
             }
-            else if (quantity = 1)
+            else if (quantity == 1)
             {
                 total += coffee;
                 printf("Added Coffe Into Your Cart!\n");
@@ -50,11 +51,11 @@ int main(void)
 
             if (quantity > 1)
             {
-                total = quantity * tea;
+                total += quantity * tea;
 
                 printf("Added %d Tea In Your Cart!\n", quantity);
             }
-            else if (quantity = 1)
+            else if (quantity == 1)
             {
                 total += tea;
                 printf("Added Tea In Your Cart!\n");
@@ -74,11 +75,11 @@ int main(void)
 
             if (quantity > 1)
             {
-                total = quantity * biscuit;
+                total += quantity * biscuit;
 
                 printf("Added %d Biscuit In Your Cart !\n");
             }
-            else if (quantity = 1)
+            else if (quantity == 1)
             {
                 total += biscuit;
 
@@ -99,10 +100,10 @@ int main(void)
 
             if (quantity > 1)
             {
-                total = quantity * water;
-                printf("Added %d Glass Of Water In Your Cart!");
+                total += quantity * water;
+                printf("Added %d Glass Of Water In Your Cart!", quantity);
             }
-            else if (quantity = 1)
+            else if (quantity == 1)
             {
                 total += water;
                 printf("Added Glass Of Water In Your Cart!");
@@ -130,4 +131,6 @@ int main(void)
         }
 
     } while (choice != 6);
+
+    return 0;
 }
