@@ -3,16 +3,16 @@
 int main(void)
 {
     int choice, quantity;
-    int total=0;
-    float coffee = 40, tea = 15, biscuit = 20, water = 10;
+    float total=0;
+    int coffee = 40, tea = 15, biscuit = 20, water = 10;
 
     do
     {
         printf("--- Akarsit's Cafe --- \n");
-        printf("1. Coffee %.0f Rs\n", coffee);
-        printf("2. Tea %.0f Rs\n", tea);
-        printf("3. Biscuit %.0f Rs\n", biscuit);
-        printf("4. Water %.0f Rs\n", water);
+        printf("1. Coffee %d Rs\n", coffee);
+        printf("2. Tea %d Rs\n", tea);
+        printf("3. Biscuit %d Rs\n", biscuit);
+        printf("4. Water %d Rs\n", water);
         printf("5. Bill / Checkout\n");
         printf("6. Exit\n");
 
@@ -77,7 +77,7 @@ int main(void)
             {
                 total += quantity * biscuit;
 
-                printf("Added %d Biscuit In Your Cart !\n");
+                printf("Added %d Biscuit In Your Cart !\n", quantity);
             }
             else if (quantity == 1)
             {
@@ -117,7 +117,7 @@ int main(void)
 
         case 5:
             printf("Genrating Your Bill...\n");
-            printf("Your Total bill is : %d Rs\n", total);
+            printf("Your Total bill is : %.2f Rs\n", total);
             break;
 
             case 6: 
