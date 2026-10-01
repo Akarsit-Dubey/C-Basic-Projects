@@ -17,6 +17,11 @@ int main(void)
         printf("What Operation U Want To Perform? : ");
         scanf("%d", &choice);
 
+        if(choice<=0)
+        {
+            printf("invalid input");
+        }
+        
         switch (choice)
         {
         case 1:
@@ -52,12 +57,10 @@ int main(void)
             }
 
             else{
-
             balance += deposit;
             printf("Deposit Successfull. \n");
-
             }
-            
+
             break;
 
         case 4:
